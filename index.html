@@ -4,14 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calculator</title>
-	<script src="script.js"></script>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<h1>Калькулятор</h1>
+	<h1 id="title">Калькулятор</h1>
 	<div class="container">
-		<div class="item input"><form name = "form"><input type="text" name="textview" readonly></form></div>
-		<div class="item dark" onclick="clean()">C</div>
+		<div class="input_wrap">
+			<form id="form" name = "form" >
+				<input id = "input" type="text" name="textview" readonly>
+			</form>
+		</div>
+		<div id="item"class="item dark" onclick="clean()">C</div>
 		<div class="item dark" onclick="back()">←</div>
 		<div class="item dark" onclick="insert('%')">%</div>
 		<div class="item orange" onclick="insert('/')">÷</div>
@@ -33,4 +36,8 @@
 		
 	</div>
 </body>
+<script src="script.js"></script>
+<script>
+	
+</script>
 </html>
